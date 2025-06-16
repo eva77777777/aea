@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hireink</title>
+    <link rel="stylesheet" href="Exam_homepage.css">
+
+    <style>
+/* TÖRÉSPONTOK */    
+       
+        @media screen and (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "header"
+                "section"
+                "article"
+                "footer";  
+            }
+            .tart {height: 66vh;
+                font-size: 0.9rem;
+            } 
+            .szek {height: 10vh;
+                /* font-size: 0.9rem; */
+                padding: 0;
+            }
+                     
+        }
+        @media screen and (max-width: 400px){
+            .flec {height: 7vh;
+                font-size: 0.9rem;
+            }
+            .szek {font-size: 0.7rem;}
+            .tart {height: 70vh;
+                font-size: 0.8rem;
+            }
+            .llec {height: 3vh;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay" id="overlay">
+    </div>
+    <div class="container">
+    <div class="flec">
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle" >
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="Rolunk.html">Rólunk</a></li>
+                    <li><a href="Kinalat.html">Kínálat</a></li>
+                    <li><a href="Kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            <img src="M_logo-icon.ico" alt="logo" class="logo">
+            <a href="Bejelentkezes.html" class="kapcs-gomb">
+                    <img src="user-icon.png" alt="Kapcsolat" class="kapcslogo">
+            </a>    
+        </nav>
+    </div>
+    <div class="szek">
+        <div class="oldalfej2" id="page-header2">
+        <div class="rating-box">
+            <span>Értékelj minket:</span>
+            <div id="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <div id="rating-result">Átlag: <span id="avg-rating">0</span>; értékelések száma: <span id="rating-count">0</span>
+            </div>
+        </div>
+        </div>
+    
+        <div class="hircim">
+            <h3>Életképeink</h3>
+            <img src="kert_2.jpg" alt="logisztika" width="90%" class="imp-img">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+                <div>
+                    <!-- törölve, másra lesz -->
+                 </div>
+        </div>
+    </div>
+<!-- HÍREK -- A LÁBLÉCEN LÉVŐ HÍREK IKONHOZ is kapcs. -->
+    <div class="tart">
+        <div class="bg-text">
+            <div class="oldalfej" id="page-header">
+                <p id="oldfejstyle"><b>Híreink</b></p>
+            </div>
+            <div class="content">
+              <div class="hircim">
+                <details >
+                    <summary>Interim szakember</summary>
+                    <p class="hir">35 felett, 10 éves alkalmazotti munkaviszony után bármikor felmerülhet a gondolat, hogy szeretnél "külsős" lenni, 
+                        projektekben dolgozni. Mégsem szertnél céget építeni, hiszen mindenhez nem érthetsz. <br>
+                        Akkor nincs megoldás? <br>
+                        De van: az interim menedzsment. <br>
+                        Mert a szakmádat magas szinten műveled és szereted is, így team-ben dolgozhatsz együtt megbízottként másokkal, akik 
+                        szintén a saját szakterületük specialistái.
+                    </p>
+                </details>
+                <details>
+                    <summary>Paradoxon</summary>
+                    <p class="hir">GALLUP felmérés, 2024. <br>
+                        Ha az emberiség mentális egészsége rohamosan hanyatlik a fejlődés és a növekvő jólét fénykorában, akkor ez korunk egyik legnagyobb 
+                        paradoxona. <br>A munkahelyi stressz fő oka az anyag- és eszköz-elégtelenség (ideértve pl. a stratégiát vagy a munkafolyamatot is), 
+                        ami gátolja a munka hatékony elvégzését is. <br>Ez a probléma nem oldható meg egy jógamatraccal; a menedzsment részéről kellenek intézkedések. 
+                        <br> <br>Azon országokban, ahol a munkaügyi jogszabályok a tisztességes bérezésre, a biztonságos munkavégzésre, a családi kötelezettségek, 
+                        illetve az anyaság támogatására irányulnak, ott a teljesítmény színvonala is magasabb, és az elkötelezett munkavállalók a legalacsonyabb 
+                        stressz-szintről számolnak be.
+                    </p>
+                </details>
+                <details>
+                    <summary>Kösz, jó(l)</summary>
+                    <p class="hir">A Kösz jó(l) vagyok kutatás jelentős stresszt mutat a megkérdezettek körében. <br> 
+                        A magyar tulajdonú vállalatoknál a tulajdonosi és az operatív szerepkörök szétválasztása kevés helyen valósult meg,  
+                        a tulajdonosok szinte naponta vesznek részt az operatív irányításban, ahelyett, hogy a stratégiai döntéshozatalra 
+                        és a hosszú távú fejlődésre koncentrálnának. <br> 
+                        A cégek piaci helytállásához nemcsak szakmai tudásra, hanem előrelátó, tudatos vezetésre, egy támogató közösségre, 
+                        és a munkahelyi jóllét előmozdítására is szükség van.</p>
+                </details>
+                <details>
+                    <summary>Női dilemma</summary>
+                    <p class="hir">„Átcsoportosítottam három projektet, és így vállalhattuk a megrendelést, 
+                        amitől a következő negyedév komolyan megugrott!” – ritkán hallunk ilyen mondatokat a női vezetőktől. 
+                        <br>A női vezetőnek két "stílus" közül kell választania: “túl direkt, túl férfias” vagy "tradicionálisan nőies." 
+                        Ám, ha a "női stílust" választja, akkor a saját megítélését ronthatja mások szemében azzal, hogy “túl gyöngének” 
+                        tarthatják a hatékony vezetéshez. <br> Ezt megváltoztatni nemcsak érdemes és lehetséges, hanem szükséges is.
+                    </p>
+                </details>
+                <details>
+                    <summary>Hírcím5</summary>
+                    <p class="hir">Hír5</p>
+                </details>
+                <details>
+                    <summary>Hírcím6</summary>
+                    <p class="hir">Hír6</p>
+                </details>
+                <details>
+                    <summary>Hírcím7</summary>
+                    <p class="hir">Hír7</p>
+                </details>
+                <details>
+                    <summary>Hírcím8</summary>
+                    <p class="hir">Hír8</p>
+                </details>
+                <details>
+                    <summary>Hírcím9</summary>
+                    <p class="hir">Hír9</p>
+                </details>
+                <details>
+                    <summary>Hírcím10</summary>
+                    <p class="hir">Hír10</p>
+                </details>
+              </div>
+            </div>
+        </div>    
+    </div>
+<!-- LÁBLÉC -->
+        <div class="llec">
+            <div class="footer-buttons">
+            <a href="Impresszum.html" class="impressum-gomb">
+                <img src="i-blue-icon.png" alt="impressum" class="impressum">
+            </a>
+            <a href="Hirek.html" class="hirek-gomb">
+                <img src="news-icon.png" alt="Hírek" class="hirek">
+            </a>
+            <a href="Irj-nekunk.html" class="uzenet-gomb">
+                <img src="pencil-white-icon.png" alt="uzenet" class="uzenet">
+            </a>
+            <a href="#" class="Fb-gomb">
+                <img src="facebook-icon.png" alt="FB-oldal" class="fb-oldal">
+            </a>
+            <a href="#" class="Linkedin-gomb">
+                <img src="linkedin-icon.png" alt="Hírek" class="hirek">
+            </a>
+        </div>
+    </div>
+<script src="Exam_homepage.js"></script>
+</body>
+</html>  

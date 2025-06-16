@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolunk</title>
+    <link rel="stylesheet" href="Exam_homepage.css">
+
+    <style>
+    /* TÖRÉSPONTOK */
+        @media screen and (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "header"
+                "section"
+                "article"
+                "footer";  
+            }
+            .tart {height: 66vh;
+                font-size: 0.9rem;
+            } 
+            .szek {height: 10vh;
+                /* font-size: 0.9rem; */
+                padding: 0;
+            }
+        }
+        @media screen and (max-width: 400px){
+            .flec {height: 7vh;
+                font-size: 0.9rem;
+            }
+            .szek {font-size: 0.7rem;}
+            .tart {height: 70vh;
+                font-size: 0.8rem;
+            }
+            .llec {height: 3vh;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+    <div class="flec">
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle" >
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html ">Főoldal</a></li>
+                    <li><a href="Rolunk.html">Rólunk</a></li>
+                    <li><a href="Kinalat.html">Kínálat</a></li>
+                    <li><a href="Kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            <img src="M_logo-icon.ico" alt="logo" class="logo">
+            <a href="Bejelentkezes.html" class="kapcs-gomb">
+                    <img src="user-icon.png" alt="Kapcsolat" class="kapcslogo">
+            </a>    
+        </nav>
+        </div>
+        <div class="szek">
+            <div class="oldalfej2" id="page-header2">
+            <div class="rating-box">
+                <span>Értékelj minket:</span>
+                <div id="star-rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div id="rating-result">Átlag: <span id="avg-rating">0</span>; értékelések száma: <span id="rating-count">0</span>
+                </div>
+            </div>
+            </div>
+            <div class="hircim">
+                <span><h3>Életképeink</h3></span>   
+                <img src="team_10.jpg" alt="logisztika" width="90%" class="imp-img">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div>
+                    <!-- törölve, másra lesz -->
+                </div>
+            </div>
+        </div>
+
+        <div class="tart">
+            <div class="bg-text">
+                <div class="oldalfej" id="page-header">
+                    <p id="oldfejstyle"><b>Rólunk</b></p>
+                </div>
+                <div class="content">     
+                    <div class="media">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 3</div>
+                                    <img src="Ugyvezeto.JPG" style="width:100%">
+                                <div class="text">Ügyvezető igazgató</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                    <img src="Ugyvezeto_helyettes.jpg" style="width:100%">
+                                <div class="text">Ügyvezető igazgatóhelyettes</div>
+                            </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 3</div>
+                                    <img src="Projektmanager.JPG" style="width:100%">
+                                <div class="text">Projektmenedzser</div>
+                            </div>
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
+                            <span class="dot" onclick="currentSlide(3)"></span> 
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <p> Évtizedek alatt cégek sokaságának nyújtottunk már hátteret a magunk és interim szakemberpartnereink gyakorlati és elméleti
+                        tapasztalatai alapján. Krízishelyzetek esetén is biztonságot adunk az elengedhetetlen újratervezéshez, a továbblépéshez; egy új korszak 
+                        megalapozásához. <br> Megbízóinkkal közös célunk az üzlet folytonosságának fenntartása, a kivívott ismertség, a pozíciók 
+                        és az értékek megőrzése, erősítése.
+                    </p>        
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="llec">
+            <div class="footer-buttons">
+            <a href="Impresszum.html" class="impressum-gomb">
+                <img src="i-blue-icon.png" alt="impressum" class="impressum">
+            </a>
+            <a href="Hirek.html" class="hirek-gomb">
+                <img src="news-icon.png" alt="Hírek" class="hirek">
+            </a>
+            <a href="Irj-nekunk.html" class="uzenet-gomb">
+                <img src="pencil-white-icon.png" alt="uzenet" class="uzenet">
+            </a>
+            <a href="#" class="fb-gomb">
+                <img src="facebook-icon.png" alt="FB-oldal" class="fb-oldal">
+            </a>
+            <a href="#" class="linkedin-gomb">
+                <img src="linkedin-icon.png" alt="Hírek" class="hirek">
+            </a>
+        </div>
+    </div>
+<script src="Exam_homepage.js"></script>
+</body>
+</html>  

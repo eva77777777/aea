@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impresszum</title>
+    <link rel="stylesheet" href="Exam_homepage.css">
+    <style>
+
+        
+/* TÖRÉSPONTOK */    
+       
+        @media screen and (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "header"
+                "section"
+                "article"
+                "footer";  
+            }
+            .tart {height: 66vh;
+                font-size: 0.9rem;
+            } 
+            .szek {height: 10vh;
+                /* font-size: 0.9rem; */
+                padding: 0;
+            }
+            .imp-tbl {max-width: 90%;
+                    border: 0.5rem;
+            }
+            .imp-tbl td,th {
+                padding: 0,5rem
+            }
+        }
+        @media screen and (max-width: 400px){
+            .flec {height: 7vh;
+                font-size: 0.9rem;
+            }
+            .szek {font-size: 0.7rem;}
+            .tart {height: 70vh;
+                font-size: 0.8rem;
+            }
+            .llec {height: 3vh;
+            }
+            .imp-tbl td,th {
+                font-size: smaller;
+            }
+            .imp-tbl {
+                max-width: 60%;        
+    }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay" id="overlay">
+    </div>
+    <div class="container">
+    <div class="flec">
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle" >
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="Rolunk.html">Rólunk</a></li>
+                    <li><a href="Kinalat.html">Kínálat</a></li>
+                    <li><a href="Kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            <img src="M_logo-icon.ico" alt="logo" class="logo">
+            <a href="Bejelentkezes.html" class="kapcs-gomb">
+                    <img src="user-icon.png" alt="Kapcsolat" class="kapcslogo">
+            </a>    
+        </nav>
+    </div>
+    <div class="szek">
+        <div class="oldalfej2" id="page-header2">
+        <div class="rating-box">
+            <span>Értékelj minket:</span>
+            <div id="star-rating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+                <div id="rating-result">Átlag: <span id="avg-rating">0</span>; értékelések száma: <span id="rating-count">0</span>
+                </div>
+        </div>
+        </div>
+        <div class="hircim">
+            <span><h3>Impresszió - Életképeink</h3></span>
+            <img src="pihen_10.jpg" alt="impresszió" class="imp-img" width="90%">
+            <p>&nbsp;  </p>
+        </div> 
+    </div>
+    <div class="tart">
+        <div class="bg-text">
+            <div class="oldalfej" id="page-header">
+                <p id="oldfejstyle"><b>Impresszum</b></p>
+            </div>
+            <div class="content">
+                <br><br><br><br>
+                <table class="imp-tbl">
+                    <tr>
+                        <td>Főszerkesztő:</td>
+                        <td>Gipsz Jakab</td>
+                    </tr>
+                    <tr>
+                        <td>Feleős Kiadó:</td>
+                        <td>MM Kft</td>
+                    </tr>
+                    <tr>
+                        <td>Fejlesztési tanácsadó:</td>
+                        <td>FRONTEND Kft</td>
+                    </tr>
+                    <tr>
+                        <td>Ügyfélszolgálat:</td>
+                        <td>ugyfel@mm.com</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>36-1-234-5678</td>
+                    <tr>
+                    <tr>
+                        <td></td>
+                        <td>munkanapon 8-12h</td>
+                    <tr>    
+                        <td>Elérhetőségeink:</td>
+                            <td>1234 Bp., Fő út 77.</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>36-1-876-5432/td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>mm@mm.com</td>
+                        </tr>
+                </table>
+            </div>
+        </div>    
+    </div>
+
+        <div class="llec">
+            <div class="footer-buttons">
+            <a href="Impresszum.html" class="impressum-gomb">
+                <img src="i-blue-icon.png" alt="impressum" class="impressum">
+            </a>
+            <a href="Hirek.html" class="hirek-gomb">
+                <img src="news-icon.png" alt="Hírek" class="hirek">
+            </a>
+            <a href="Irj-nekunk.html" class="uzenet-gomb">
+                <img src="pencil-white-icon.png" alt="uzenet" class="uzenet">
+            </a>
+            <a href="#" class="Fb-gomb">
+                <img src="facebook-icon.png" alt="FB-oldal" class="fb-oldal">
+            </a>
+            <a href="#" class="Linkedin-gomb">
+                <img src="linkedin-icon.png" alt="Hírek" class="hirek">
+            </a>
+        </div>
+    </div>
+<script src="Exam_homepage.js"></script>
+</body>
+</html>  

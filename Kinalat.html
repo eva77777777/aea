@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinalat</title>
+    <link rel="stylesheet" href="Exam_homepage.css">
+
+    <style>
+/* TÖRÉSPONTOK */    
+         @media screen and (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "header"
+                "section"
+                "article"
+                "footer";  
+            }
+            .tart {height: 66vh;
+                font-size: 0.9rem;
+            } 
+            .szek {height: 10vh;
+                /* font-size: 0.9rem; */
+                padding: 0;
+            }
+            table {
+                font-size: small;
+                width: 35%;
+            }            
+        }
+        @media screen and (max-width: 400px){
+            .flec {height: 7vh;
+                font-size: 0.9rem;
+            }
+            .szek {font-size: 0.7rem;}
+            .tart {height: 70vh;
+                font-size: 0.8rem;
+            }
+            .llec {height: 3vh;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- FEJLÉC -->
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+    <div class="flec">
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle" >
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="Rolunk.html">Rólunk</a></li>
+                    <li><a href="Kinalat.html">Kínálat</a></li>
+                    <li><a href="Kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            <img src="M_logo-icon.ico" alt="logo" class="logo">
+            <a href="Bejelentkezes.html" class="kapcs-gomb">
+                    <img src="user-icon.png" alt="Kapcsolat" class="kapcslogo">
+            </a>    
+        </nav>
+        </div>
+<!-- SZEKCIÓ -->        
+        <div class="szek">
+            <div class="oldalfej2" id="page-header2">
+            <div class="rating-box">
+                <span>Értékelj minket:</span>
+                <div id="star-rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div id="rating-result">Átlag: <span id="avg-rating">0</span>; értékelések száma: <span id="rating-count">0</span>
+                </div>
+            </div>
+            </div>
+                <div class="hircim">
+                <span><h3>Életképeink</h3></span>
+                <img src="vizeses.jpg" alt="napraforgo" width="90%" class="imp-img">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div>
+                    <!-- törölve, másra lesz -->
+                </div>
+            </div>
+        </div>
+<!-- TARTALOM -->
+        <div class="tart">
+            <div class="bg-text">
+                <div class="oldalfej" id="page-header">
+                    <p id="oldfejstyle"><b >Szolgáltatásaink</b></p>
+                </div>
+                    
+                <div class="content">
+                    <button class="tablink" onclick="openPage('menu1', this, '#0a1f96')">Erőforrás</button>
+                    <button class="tablink" onclick="openPage('menu2', this, '#0a1f96')" id="defaultOpen">Változás<script src=""></script></button>
+                    <button class="tablink" onclick="openPage('menu3', this, '#0a1f96')">Nemzedék</button>
+                    <button class="tablink" onclick="openPage('menu4', this, '#0a1f96')">Értékelés</button>
+                    
+                    <div id="menu1" class="tabcontent">
+                        <h3>Az átmeneti vezetői erőforráshiány pótlása</h3>
+                        <p>Megbízott külső (interim) szakemberekkel pótoljuk a szakemberhiányt <br>
+                            - átmeneti kiesés (pl. tartós betegség, gyermekvállalás), <br>
+                            - vagy egy vezető távozása esetén.</p>
+                            <p>Különösen indokolt az interim szolgáltatás igénybevétele, amikor egy meghatározó szakember, vezető esik ki a rendszerből.</p> 
+                            <p>A szükséges kompetenciák és tapasztalatok birtokában lévő interim szakember mindaddig betölti a megüresedett 
+                            pozíciót, amíg az átmenetileg kieső vezető visszatér vagy egy új alkalmazott vezető belép a szervezetbe.</p>
+                        </p>
+                    </div>    
+                        
+                    <div id="menu2" class="tabcontent">
+                        <h3>Változás- és válságmenedzsment, reorganizáció</h3>
+                        <p>Vannak speciális feladatok, melyek kívül esnek a napi rutintevékenységek körén, és ezek megoldásához hiányzik
+                            a belső kapacitás és/vagy a kompetencia.
+                            Számos ilyen esetben nem indokolt a szervezet bővítése, hiszen az átmeneti külső erőforrás bevonása 
+                            eredményesebb és költséghatékonyabb.  , az interim menedzsment szolgáltató megbízása. <br>
+                            Ilyen projektek:
+                            - a vállalatfelvásárlások és összeolvadások koordinálása, <br>
+                            - a dinamikus növekedéssel összefüggő átmeneti kihívások kezelése, 
+                            - a zöldmezős beruházások, üzembezárások vagy a reorganizáció levezénylése, támogatása. 
+                            </p> 
+                    </div>
+
+                    <div id="menu3" class="tabcontent">
+                        <h3>Nemzedékváltás</h3>
+                        <p>Nemzedékváltás családi vállalkozásoknál:   
+                        </p>
+                        <p>Nem csak a gazdasági, irányítási és szervezési szempontokat kell összehangolni, hanem a feltörő érzelmeket is. 
+                            Ehhez a külső szakembereknek értő gonddal kell eljárniuk. </p>
+                        <p>Generációváltás az operatív vezetésben:
+                        </p>
+                        <p>A legtöbb magyar tulajdonú vállalkozás az alapító tulajdonos egyszemélyes vezetése alatt áll, akit az esetek többségében 
+                            teljesen lekötnek a mindennapi teendők. Ha nem családtag lesz az utód, akkor is időben el kell kezdeni az utódlástervezést. 
+                            A zökkenőmentes átmenet érdekében segítünk megtalálni a tulajdonos utódját az operatív vezetésben, majd segítünk elvégezni 
+                            a szükséges fejlesztéseket és változtatásokat.
+                    </div>
+                    <div id="menu4" class="tabcontent">
+                        <br>
+                        <h3>Cégeladásra való felkészítés</h3>
+                        <p>A Megbízóval közösen döntjük el, hogy valóban az eladás-e a legoptimálisabb, 
+                            de minden megoldáshoz feltárjuk a kínálkozó lehetőségeket. A döntéshez teljeskörű cégértékelés szükséges.
+                        </p>
+                        <h3>Cégértékelés</h3>
+                        <p>A cégértékelést egyéb esetekben is elvégezzük (pl. hitelfelvétel, tőkepiaci igények, egyesülés, szétválás, a cég partnereinek 
+                            való megfelelés, stb.)</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- LÁBLÉC -->
+        <div class="llec">
+            <div class="footer-buttons">
+            <a href="Impresszum.html" class="impressum-gomb">
+                <img src="i-blue-icon.png" alt="impressum" class="impressum">
+            </a>
+            <a href="Hirek.html" class="hirek-gomb">
+                <img src="news-icon.png" alt="Hírek" class="hirek">
+            </a>
+            <a href="Irj-nekunk.html" class="uzenet-gomb">
+                <img src="pencil-white-icon.png" alt="uzenet" class="uzenet">
+            </a>
+            <a href="#" class="fb-gomb">
+                <img src="facebook-icon.png" alt="FB-oldal" class="fb-oldal">
+            </a>
+            <a href="#" class="linkedin-gomb">
+                <img src="linkedin-icon.png" alt="Hírek" class="hirek">
+            </a>
+        </div>
+    </div>
+<script src="Exam_homepage.js"></script>
+</body>
+</html>  
