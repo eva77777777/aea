@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat</title>
+    <link rel="stylesheet" href="Exam_homepage.css">
+
+    <style>
+/* TÖRÉSPONTOK */    
+         @media screen and (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "header"
+                "section"
+                "article"
+                "footer";  
+            }
+            .tart {height: 66vh;
+                font-size: 0.9rem;
+            } 
+            .szek {height: 10vh;
+                /* font-size: 0.9rem; */
+                padding: 0;
+            }
+            table {
+                font-size: small;
+                width: 35%;
+            }            
+        }
+        @media screen and (max-width: 400px){
+            .flec {height: 7vh;
+                font-size: 0.9rem;
+            }
+            .szek {font-size: 0.7rem;}
+            .tart {height: 70vh;
+                font-size: 0.8rem;
+            }
+            .llec {height: 3vh;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- FEJLÉC -->
+    <div class="overlay" id="overlay"></div>
+    <div class="container">
+    <div class="flec">
+        <nav class="navbar">
+            <div class="menu-toggle" id="menu-toggle" >
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="Rolunk.html">Rólunk</a></li>
+                    <li><a href="Kinalat.html">Kínálat</a></li>
+                    <li><a href="Kapcsolat.html">Kapcsolat</a></li>
+                </ul>
+            <img src="M_logo-icon.ico" alt="logo" class="logo">
+            <a href="Bejelentkezes.html" class="kapcs-gomb">
+                    <img src="user-icon.png" alt="Kapcsolat" class="kapcslogo">
+            </a>    
+        </nav>
+        </div>
+<!-- SZEKCIÓ -->        
+        <div class="szek">
+            <div class="oldalfej2" id="page-header2">
+            <div class="rating-box">
+                <span>Értékelj minket:</span>
+                <div id="star-rating">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <div id="rating-result">Átlag: <span id="avg-rating">0</span>; értékelések száma: <span id="rating-count">0</span>
+                </div>
+            </div>
+            </div>
+                <div class="hircim">
+                <span><h3>Életképeink</h3></span>
+                <img src="vallalk.jpg" alt="vallakozo" width="90%" class="imp-img">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div>
+                    <!-- törölve, másra lesz -->
+                </div>
+            </div>
+        </div>
+<!-- TARTALOM -->
+        <div class="tart">
+            <div class="bg-text">
+                <div class="oldalfej" id="page-header">
+                    <p id="oldfejstyle"><b >(: Legyen nálunk ügyfélfiókod :)</b></p>
+                </div>
+            <div class="content">
+                <form> <!-- action="/action_page.php" -->
+                    <h3>Ha már van fiókod, csak lépj be</h3>
+                    <a href="Bejelentkezes.html" class="signinbtn">Belépek</a>
+                    <h2><u>Regisztráció</u></h2>
+                    <label for="email">E-mail:</label>
+                    <input type="text" placeholder="Érvényes e-mail-cím" name="email" id="email" required>
+                    <label for="psw">Jelszó:</label>
+                    <input type="password" placeholder="Minimum 8 karakter (betű, szám, speciális karakter)" name="psw" id="psw" required>
+                    <label for="psw-repeat">Jelszó újra:</label>
+                    <input type="password" placeholder="Ismételd meg a jelszót" name="psw-repeat" id="psw-repeat" required>
+                    <p>A regisztrációval elfogadod a <a href="#"><b>felhasználói feltételeket.</b></a></p>
+                    <button type="submit" class="registerbtn">Regisztrálok</button>
+                </form>
+            </div>
+            </div>
+        </div>
+<!-- LÁBLÉC -->
+        <div class="llec">
+            <div class="footer-buttons">
+            <a href="Impresszum.html" class="impressum-gomb">
+                <img src="i-blue-icon.png" alt="impressum" class="impressum">
+            </a>
+            <a href="Hirek.html" class="hirek-gomb">
+                <img src="news-icon.png" alt="Hírek" class="hirek">
+            </a>
+            <a href="Irj-nekunk.html" class="uzenet-gomb">
+                <img src="pencil-white-icon.png" alt="uzenet" class="uzenet">
+            </a>
+            <a href="#" class="fb-gomb">
+                <img src="facebook-icon.png" alt="FB-oldal" class="fb-oldal">
+            </a>
+            <a href="#" class="linkedin-gomb">
+                <img src="linkedin-icon.png" alt="Hírek" class="hirek">
+            </a>
+        </div>
+    </div>
+<script src="Exam_homepage.js"></script>
+</body>
+</html>  
